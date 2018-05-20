@@ -1,7 +1,7 @@
 const Discord = require("discord.js") 
 const bot = new Discord.Client()
 
-bot.login('NDQ3NzQ2Mjk2NjMyMDQ5Njg1.DeMDwg.7ufLfPa2ZPJ3XstHoYxRO7LFKw8')
+bot.login(process.env.TOKEN)
 
 bot.on('message', function (message) {
     if (message.content === '^meteo' ) {
